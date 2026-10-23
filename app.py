@@ -5,9 +5,7 @@ pokedex = open("./pokedex.json", encoding="utf8")
 data = json.load(pokedex)
 print(data[0])
 
-def show_items(items):
-    for index, item in enumerate(items):
-        print(index, ":", item["name"])
+for i in range 
 
 language = input(print("Choose one: English, Japanese, Chinese, French"))
 if language == "English":
