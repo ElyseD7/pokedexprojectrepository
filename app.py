@@ -8,10 +8,36 @@ print(data[0])
 for i in range(len(data)):
     print(data[i]['name'])
 
-language = input(print("Choose one: English, Japanese, Chinese, French"))
-if language == "English":
-    for i in range(len(data)):
-        print( data[i]['name']['english'])
+# language = input(print("Choose one: English, Japanese, Chinese, French "))
+# if language == "English":
+#     for i in range(len(data)):
+#         print(data[i]['name']['english'])
+# elif language == "Japanese":
+#     for i in range(len(data)):
+#         print(data[i]['name']['japanese'])
+# elif language == "Chinese":
+#      for i in range(len(data)):
+#         print(data[i]['name']['chinese'])
+# elif language == "French":
+#     for i in range(len(data)):
+#         print(data[i]['name']['french'])
+
+# list =[]
+# type = input("What type of pokemon are you looking for? ")
+# for i in range (len(data)):
+#     if type in data[i]['type']:
+#         list.append(data[i]['name']['english'])
+# else:
+#     print("No type found")
+# print(list)
+
+list = []
+search = input("Let's search for pokemon ")
+for i in range (len(data)):
+    if search[i] == data[i]['name']['english'][i]:
+        list.append((data[i]['name']['english'][i]))
+    
+
 
 
 
