@@ -31,11 +31,25 @@ for i in range(len(data)):
 #     print("No type found")
 # print(list)
 
+def search_item(x):
+    for i in range(x):
+
+
 list = []
 search = input("Let's search for pokemon ")
 for i in range (len(data)):
-    if search[i] == data[i]['name']['english'][i]:
+    if search[i] == search_item(data)
         list.append((data[i]['name']['english'][i]))
+
+
+
+
+
+# list = []
+# search = input("Let's search for pokemon ")
+# for i in range (len(data)):
+#     if search[i] == data[i]['name']['english'][i]:
+#         list.append((data[i]['name']['english'][i]))
     
 
 
