@@ -8,6 +8,13 @@ print(data[0])
 for i in range(len(data)):
     print(data[i]['name'])
 
+## Open the JSON file of pokemon data
+pokemove = open("./moves.json", encoding="utf8")
+## create variable "data" that represents the enitre pokedex list
+moves = json.load(pokemove)
+print(data[0])
+
+
 # language = input(print("Choose one: English, Japanese, Chinese, French "))
 # if language == "English":
 #     for i in range(len(data)):
@@ -31,26 +38,22 @@ for i in range(len(data)):
 #     print("No type found")
 # print(list)
 
-def search_item(x):
-    for i in range(x):
 
 
 list = []
 search = input("Let's search for pokemon ")
-for i in range (len(data)):
-    if search[i] == search_item(data)
-        list.append((data[i]['name']['english'][i]))
+for pokemon in data:
+    if search in pokemon['name']['english']:
+        list.append((pokemon['name']['english']))
+print(list)
 
+choice = input("Select a pokemon ")
+for pokemon in data:
+    if choice in pokemon['name']['english']:
+        print("Perfect, let's look at their moves! ")
 
+print(moves[1])
 
-
-
-# list = []
-# search = input("Let's search for pokemon ")
-# for i in range (len(data)):
-#     if search[i] == data[i]['name']['english'][i]:
-#         list.append((data[i]['name']['english'][i]))
-    
 
 
 
