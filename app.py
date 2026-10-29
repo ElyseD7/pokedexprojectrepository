@@ -40,26 +40,27 @@ print(data[0])
 
 
 
-# list = []
-# search = input("Let's search for pokemon ")
-# for pokemon in data:
-#     if search in pokemon['name']['english']:
-#         list.append((pokemon['name']['english']))
-# print(list)
+list = []
+search = input("Let's search for pokemon ")
+for pokemon in data:
+    if search in pokemon['name']['english']:
+        list.append((pokemon['name']['english']))
+print(list)
 
-choice = input("Select a pokemon ")
-# for pokemon in data:
-#     if choice in pokemon['name']['english']:
-#         print("Perfect, let's look at their moves! ")
+choice = input("Let's choose a pokemon ")
+for pokemon in data:
+    if choice in pokemon['name']['english']:
+        print("Perfect, let's look at their moves! ")
 
 for item in range (len(data)):
     if data[item]['name']['english'] == choice:
         kind = data[item]['type']
+
 for i in range(len(kind)):
     print(kind[i])
 
 for i in range(len(moves)):
-    if moves[i]['type'] == kind[i]:
+    if moves[i]['type'] == kind[0]:
          print(moves[i]['ename'])
 
 
